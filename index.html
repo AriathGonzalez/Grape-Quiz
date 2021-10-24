@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grape Project</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat+Alternates:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="separate">Grape Quiz</h1>
+    <form name="quiz" id="quiz" class="quiz-text separate">
+      <div id="question1">
+        <p class="question-heading">
+          1. Which country originally brought grapes to America?
+        </p>
+        <p><input type="radio" name="question1" value="correct" /> a. Spain</p>
+        <p>
+          <input type="radio" name="question1" value="incorrect" /> b. China
+        </p>
+        <p>
+          <input type="radio" name="question1" value="incorrect" /> c. Argentina
+        </p>
+        <p>
+          <input type="radio" name="question1" value="incorrect" /> d. France
+        </p>
+      </div>
+      <div id="question2">
+        <p class="question-heading">2. What are grapes?</p>
+        <p>
+          <input type="radio" name="question2" value="incorrect" /> a. Melons
+        </p>
+        <p>
+          <input type="radio" name="question2" value="incorrect" /> b. Allium
+        </p>
+        <p>
+          <input type="radio" name="question2" value="correct" /> c. Berries
+        </p>
+        <p>
+          <input type="radio" name="question2" value="incorrect" /> d. Legumes
+        </p>
+      </div>
+      <div id="question3">
+        <p class="question-heading">3. How many grape varieties are there?</p>
+        <p>
+          <input type="radio" name="question3" value="incorrect" /> a. ~5000
+        </p>
+        <p><input type="radio" name="question3" value="incorrect" /> b. ~800</p>
+        <p><input type="radio" name="question3" value="correct" /> c. ~8000</p>
+        <p><input type="radio" name="question3" value="incorrect" /> d. ~500</p>
+      </div>
+      <div id="question4">
+        <p class="question-heading">
+          4. How many calories are in a cup of grapes?
+        </p>
+        <p>
+          <input type="radio" name="question4" value="incorrect" /> a. 150
+          calories
+        </p>
+        <p>
+          <input type="radio" name="question4" value="incorrect" /> b. 65
+          calories
+        </p>
+        <p>
+          <input type="radio" name="question4" value="incorrect" /> c. 237
+          calories
+        </p>
+        <p>
+          <input type="radio" name="question4" value="correct" /> d. 100
+          calories
+        </p>
+      </div>
+      <div id="question5">
+        <p class="question-heading">
+          5. How many pounds of grapes does it take to make one bottle of wine?
+        </p>
+        <p>
+          <input type="radio" name="question5" value="correct" /> a. 2.5 lbs
+        </p>
+        <p>
+          <input type="radio" name="question5" value="incorrect" /> b. 2 lbs
+        </p>
+        <p>
+          <input type="radio" name="question5" value="incorrect" /> c. 1.5 lbs
+        </p>
+        <p>
+          <input type="radio" name="question5" value="incorrect" /> d. 1 lbs
+        </p>
+      </div>
+      <div id="question6">
+        <p class="question-heading">
+          6. How are raisins naturally made from grapes?
+        </p>
+        <p>
+          <input type="radio" name="question6" value="incorrect" />
+          a. Grapes are put up on a drying rack
+        </p>
+        <p>
+          <input type="radio" name="question6" value="correct" />
+          b. Grapes are left to dry in the sunlight
+        </p>
+        <p>
+          <input type="radio" name="question6" value="incorrect" />
+          c. Grapes are squished of their liquids
+        </p>
+        <p>
+          <input type="radio" name="question6" value="incorrect" />
+          d. Grapes are left in the cold
+        </p>
+      </div>
+      <div id="question7">
+        <p class="question-heading">7. How long have grapes been around for?</p>
+        <p>
+          <input type="radio" name="question7" value="incorrect" /> a. 30
+          million years
+        </p>
+        <p>
+          <input type="radio" name="question7" value="incorrect" /> b. 650
+          million years
+        </p>
+        <p>
+          <input type="radio" name="question7" value="correct" /> c. 65 million
+          years
+        </p>
+        <p>
+          <input type="radio" name="question7" value="incorrect" /> d. 300
+          million years
+        </p>
+      </div>
+      <div id="question8">
+        <p class="question-heading">
+          8. Which of the following is not a color grapes come in?
+        </p>
+        <p>
+          <input type="radio" name="question8" value="incorrect" /> a. purple
+        </p>
+        <p>
+          <input type="radio" name="question8" value="incorrect" /> b. orange
+        </p>
+        <p>
+          <input type="radio" name="question8" value="incorrect" /> c. green
+        </p>
+        <p><input type="radio" name="question8" value="correct" /> d. white</p>
+      </div>
+      <button
+        type="button"
+        class="btn btn-lg submit-btn separate"
+        onclick="check()"
+        value="submit"
+      >
+        Submit
+      </button>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

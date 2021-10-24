@@ -1,0 +1,54 @@
+body {
+  background-color: #463f56;
+  text-align: left;
+}
+
+.quiz-text {
+  color: #bf92af;
+  font-family: "Crimson Text", serif;
+}
+
+.submit-btn {
+  background-color: #463f56;
+  border-color: #7e7ba7;
+  color: #7e7ba7;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+h1 {
+  color: #bf92af;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #7e7ba7;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+
+input:checked {
+  border: 3px solid white;
+}
+
+.separate {
+  margin: 1%;
+}
+
+.question-heading {
+  font-size: 1.5rem;
+}
+
+.incorrect {
+  color: #ca6b89;
+}
